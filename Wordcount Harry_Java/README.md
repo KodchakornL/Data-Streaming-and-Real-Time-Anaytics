@@ -13,6 +13,5 @@ Double click on 2_3_compile_word_count.bat
 ***4. Run Producer to send Text 1 line/secound***  
 Run producer-Harrytext.py in command prompt
 
-***5. Run Concumer show harry every 5 second***  
+***5. Run Concumer show Harry every 5 second***  
 Run consumer-HarryCount.py in command prompt
-
