@@ -2,5 +2,5 @@
 
 **Project**  
 
-1.Wordcount Harry every 5 seconds.  
-2.Use TF-IDF to find a significant word.
+1. Wordcount Harry every 5 seconds.  
+2. Use TF-IDF to find a significant word.
