@@ -17,18 +17,3 @@ Double click on 2_create_test_topics.bat
 
 ***5. Run Prosucer to send Text 1 line/secound***  
 Run producer-Harrytext_pyspark.py in command prompt
-
-
-
-
-
-
-
-
-```bash
-  spark-submit --jars C:\spark-streaming-kafka-0-8-assembly_2.11-2.4.7.jar kafka_spark_wordcount_Harry.py
-```
-
-
-
-  
