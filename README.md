@@ -1,4 +1,4 @@
-# Data-Streaming-and-Real-Time-Anaytics
+# Data Streaming and Real Time Anaytics
 
 **Project use noSQL : Kafka, spark => pyspark**  
 
