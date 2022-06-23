@@ -1,8 +1,12 @@
 # Data-Streaming-and-Real-Time-Anaytics
 
-**Project**  
+**Project use Kafka, spark => pyspark**  
 
-1. Wordcount Harry every 5 seconds.  
+## 1. Wordcount Harry every 5 seconds.  
+- Show result "Harry" every 5 second => msg = c.poll(5)  
+- Show result equal 0 if don't have "Harry" every 5 second  
+
+**Consumer use Kafka**  
   
           while True:
               msg = c.poll(5)
@@ -26,6 +30,33 @@
               print('Received message: {0} , {1}'.format(kvalue, value))
 
           c.close()
-
   
-3. Use TF-IDF to find a significant word.
+  
+**Consumer use spark => pyspark **
+  
+          if __name__=="__main__":
+              sc = SparkContext(appName="Kafka Spark Demo")
+              sc.setLogLevel("WARN")
+
+              ssc = StreamingContext(sc,5)
+
+              msg = KafkaUtils.createDirectStream(ssc, topics=["streams-plaintext-input"],kafkaParams={"metadata.broker.list":"localhost:9092"})
+
+              def rdd_print(rdd):
+                  a = rdd.collect()
+                  print(f'Harry : {a[0]}')
+
+              words = msg.map(lambda x: x[1]).flatMap(lambda x: x.lower().split(" ")).filter(lambda x:'harry' in x )
+
+              words.count().foreachRDD(rdd_print)
+
+
+              # wordcount = words(lambda x: ("Harry",1)).reduceByKey(lambda a,b: a+b)
+              # wordcount.pprint()
+
+              ssc.start()
+              ssc.awaitTermination()
+            
+            
+  
+## 2. Use TF-IDF to find a significant word.
