@@ -6,6 +6,10 @@
 - Show result "Harry" every 5 second => msg = c.poll(5)  
 - Show result equal 0 if don't have "Harry" every 5 second  
 
+**Data Achitecture**  
+<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.1.png" width="350" height="300" />  
+
+
 **Consumer use Kafka**  
   
           while True:
