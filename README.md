@@ -7,7 +7,7 @@
 - Show result equal 0 if don't have "Harry" every 5 second  
 
 **Data Achitecture**  
-<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.1.png" width="450" height="300" />  
+<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.1.png" width="600" height="275" />  
 
 
 **Consumer : Using Kafka**  
