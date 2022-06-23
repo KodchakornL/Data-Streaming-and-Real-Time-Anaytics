@@ -7,10 +7,10 @@
 - Show result equal 0 if don't have "Harry" every 5 second  
 
 **Data Achitecture**  
-<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.1.png" width="350" height="300" />  
+<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.1.png" width="450" height="300" />  
 
 
-**Consumer use Kafka**  
+**Consumer : Using Kafka**  
   
           while True:
               msg = c.poll(5)
@@ -36,7 +36,7 @@
           c.close()
   
   
-**Consumer use spark => pyspark**
+**Consumer : Using spark => pyspark**
   
           if __name__=="__main__":
               sc = SparkContext(appName="Kafka Spark Demo")
