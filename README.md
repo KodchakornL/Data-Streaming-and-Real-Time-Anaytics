@@ -32,7 +32,7 @@
           c.close()
   
   
-**Consumer use spark => pyspark **
+**Consumer use spark => pyspark**
   
           if __name__=="__main__":
               sc = SparkContext(appName="Kafka Spark Demo")
@@ -58,5 +58,4 @@
               ssc.awaitTermination()
             
             
-  
 ## 2. Use TF-IDF to find a significant word.
