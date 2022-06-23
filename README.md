@@ -1,6 +1,6 @@
 # Data-Streaming-and-Real-Time-Anaytics
 
-**Project use Kafka, spark => pyspark**  
+**Project use noSQL : Kafka, spark => pyspark**  
 
 ## 1. Wordcount Harry every 5 seconds.  
 - Show result "Harry" every 5 second => msg = c.poll(5)  
@@ -63,3 +63,5 @@
             
             
 ## 2. Use TF-IDF to find a significant word.
+  
+**Producer**  
