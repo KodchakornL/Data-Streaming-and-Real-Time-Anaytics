@@ -64,27 +64,9 @@
             
 ## 2. Use TF-IDF to find a significant word.
   
-**Producer**  
-
-            for data in Lines:
-
-                p.poll(0)
-                time.sleep(0)
-                if "Page |" not in data:
-                    Temp = Temp+stop_word(data)
-                    Temp =Temp.replace('\n',' ')
-
-                else:
-                    sendMsg = Temp.encode().decode('utf-8').strip('\n')
-                    p.produce('testtopic', sendMsg , callback=delivery_report)
-                    print(f'Page {counter_page}')
-                    counter_page+=1
-                    Temp = ""
-                    i=i+1
-                    time.sleep(1) 
-                if i == 5:
-                    break   
-
+#### **Producer**  
+Send 1 page at a time of the book.  
+  
             p.flush()
   
   
@@ -122,7 +104,27 @@
                 # print("Tokenized Sentence:",tokenized_sent)
                 # print("Filterd Sentence:",filtered_sent)
                 return ' '.join(filtered_sent)
-                
-  **Result**
+  
+            for data in Lines:
+
+                p.poll(0)
+                time.sleep(0)
+                if "Page |" not in data:
+                    Temp = Temp+stop_word(data)
+                    Temp =Temp.replace('\n',' ')
+
+                else:
+                    sendMsg = Temp.encode().decode('utf-8').strip('\n')
+                    p.produce('testtopic', sendMsg , callback=delivery_report)
+                    print(f'Page {counter_page}')
+                    counter_page+=1
+                    Temp = ""
+                    i=i+1
+                    time.sleep(1) 
+                if i == 5:
+                    break   
+  
+  
+**Result**
   
   <img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.2.png" width="900" height="200" />  
