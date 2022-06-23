@@ -63,9 +63,10 @@
             
             
 ## 2. Use TF-IDF to find a significant word.
-Term frequency, tf(t,d), is the relative frequency of term t within document d,
-{\displaystyle \mathrm {tf} (t,d)={\frac {f_{t,d}}{\sum _{t'\in d}{f_{t',d}}}}}{\displaystyle \mathrm {tf} (t,d)={\frac {f_{t,d}}{\sum _{t'\in d}{f_{t',d}}}}},
-
+TF = (Number of repetitions of word in a document) / (# of words in a document) and  
+IDF =Log[(# Number of documents) / (Number of documents containing the word)]  
+  
+  
 #### **Producer**  
 Send 1 page at a time of the book.  
   
