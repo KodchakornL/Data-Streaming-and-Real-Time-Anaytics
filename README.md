@@ -232,5 +232,5 @@ Send 1 page at a time of the book.
         
 Result : 
   
-<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.3.png" width="300" height="1000" />  
+<img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.3.png" width="400" height="1000" />  
 <img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.4.png" width="900" height="200" />  
