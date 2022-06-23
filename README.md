@@ -125,4 +125,4 @@
                 
   **Result**
   
-  
+  <img src="https://github.com/KodchakornL/Data-Streaming-and-Real-Time-Anaytics/blob/main/slide_ppt/picture_No.2.png" width="900" height="200" />  
